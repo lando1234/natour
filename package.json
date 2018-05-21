@@ -1,0 +1,23 @@
+{
+  "name": "natour",
+  "version": "1.0.0",
+  "description": "natour",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lando1234/natour.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lando1234/natour/issues"
+  },
+  "homepage": "https://github.com/lando1234/natour#readme",
+  "devDependencies": {
+    "jquery": "^3.3.1",
+    "node-sass": "^4.9.0"
+  }
+}
