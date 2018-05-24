@@ -1,0 +1,43 @@
+body {
+    font-family: "Lato";
+    font-weight: 400;
+    line-height:1.7;
+    color: $color-grey-dark;
+
+}
+
+.heading-primary{
+    color:$color-white;
+    text-transform: uppercase;
+    margin-bottom:6rem;
+    
+    /* fix a un bug con las animations */
+    backface-visibility: hidden;
+
+/* los block son para que se pongan uno arriba del otro*/
+&--main {
+    display:block;
+    font-size:6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    
+    /* Unicas dos propiedades para usar los keyframes que especificamos abajo */
+    animation-name: move-in-left;
+    animation-duration: 1s;
+    
+    /* propiedades adicionales */
+    /*
+    animation-delay: 3s;  atrasa la animation 
+    animation-iteration-count: 3; repite la animation
+    */
+    animation-timing-function: ease-out; /*distintas formas de funcionar de la animation*/ 
+    
+}
+&--sub {
+    display:block;
+    font-size:2rem;
+    font-weight: 700;
+    letter-spacing: 1.17rem;
+    animation: move-in-right 1s ease-out;
+}
+}
