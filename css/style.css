@@ -16,7 +16,8 @@ body {
   font-family: "Lato";
   font-weight: 400;
   line-height: 1.7;
-  color: #777; }
+  color: #777;
+  padding: 3rem; }
 
 /* animations */
 /* puede ir cualquier cantidad de porcentajes */
