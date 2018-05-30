@@ -14,30 +14,49 @@ body {
     /* fix a un bug con las animations */
     backface-visibility: hidden;
 
-/* los block son para que se pongan uno arriba del otro*/
-&--main {
-    display:block;
-    font-size:6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    
-    /* Unicas dos propiedades para usar los keyframes que especificamos abajo */
-    animation-name: move-in-left;
-    animation-duration: 1s;
-    
-    /* propiedades adicionales */
-    /*
-    animation-delay: 3s;  atrasa la animation 
-    animation-iteration-count: 3; repite la animation
-    */
-    animation-timing-function: ease-out; /*distintas formas de funcionar de la animation*/ 
-    
+    /* los block son para que se pongan uno arriba del otro*/
+    &--main {
+        display:block;
+        font-size:6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+        
+        /* Unicas dos propiedades para usar los keyframes que especificamos abajo */
+        animation-name: move-in-left;
+        animation-duration: 1s;
+        
+        /* propiedades adicionales */
+        /*
+        animation-delay: 3s;  atrasa la animation 
+        animation-iteration-count: 3; repite la animation
+        */
+        animation-timing-function: ease-out; /*distintas formas de funcionar de la animation*/ 
+        
+    }
+    &--sub {
+        display:block;
+        font-size:2rem;
+        font-weight: 700;
+        letter-spacing: 1.17rem;
+        animation: move-in-right 1s ease-out;
+    }
 }
-&--sub {
-    display:block;
-    font-size:2rem;
+
+.heading-secondary{
+    font-size: 3.5rem;
+    text-transform: uppercase;
     font-weight: 700;
-    letter-spacing: 1.17rem;
-    animation: move-in-right 1s ease-out;
-}
+    background-image: linear-gradient(to right, $color-primary-light,$color-primary-dark);
+    display:inline-block;
+    letter-spacing: 0.2rem;
+    transition:all 0.2s;
+
+    //ESTO ES GENIALLLLLL
+    -webkit-background-clip: text;
+    color:transparent;
+
+    &:hover{
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-black,.2);
+    }
 }
