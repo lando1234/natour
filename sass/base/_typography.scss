@@ -46,12 +46,11 @@ body {
     font-size: 3.5rem;
     text-transform: uppercase;
     font-weight: 700;
-    background-image: linear-gradient(to right, $color-primary-light,$color-primary-dark);
     display:inline-block;
     letter-spacing: 0.2rem;
     transition:all 0.2s;
-
-    //ESTO ES GENIALLLLLL
+    
+    background-image: linear-gradient(to right, $color-primary-light,$color-primary-dark);
     -webkit-background-clip: text;
     color:transparent;
 
