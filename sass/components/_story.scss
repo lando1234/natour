@@ -35,10 +35,8 @@
     }
 
     &__caption { 
-        position: absolute;
-        top:50%;
-        left:50%;
-        transform: translate(-50%, 20%);
+        @include absoluteCenter;
+        
         color: $color-white;
         text-transform: uppercase;
         text-align: center;
