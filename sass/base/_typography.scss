@@ -20,7 +20,8 @@ body {
         font-size:6rem;
         font-weight: 400;
         letter-spacing: 3.5rem;
-        
+        transform: translateX(1.5%);
+
         /* Unicas dos propiedades para usar los keyframes que especificamos abajo */
         animation-name: move-in-left;
         animation-duration: 1s;
