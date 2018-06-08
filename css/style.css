@@ -1,4 +1,11 @@
 @charset "UTF-8";
+/*
+BREAKPOINTS
+    600 px phone 37.5em en el defa  ult de 16 px
+    900 px tablet portrait
+    1200 px tablet landscape
+    1800 px big screen
+*/
 *,
 *::after,
 *::before {
@@ -11,6 +18,15 @@ html {
         para que sea todo responsive en cuanto a los tamaños con rem
     */
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   font-family: "Lato";
