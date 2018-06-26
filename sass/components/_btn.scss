@@ -12,6 +12,13 @@
         border:none;
         cursor: pointer;
     }
+
+    &__arrow{
+        @include respond( phone ){
+            display:none;
+        }
+    }
+
     &:hover {
         transform:translateY(-3px);
         box-shadow: 0 1rem 2rem rgba($color-black,.2);
